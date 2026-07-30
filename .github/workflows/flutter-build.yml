@@ -11,6 +11,10 @@ on:
         description: 'Tag'
         required: false
         default: 'nightly'
+      Upload-artifact:
+        description: 'Upload Artifact'
+        required: false
+        default: 'true'
   workflow_call:
     inputs:
       upload-artifact:
