@@ -384,7 +384,7 @@ jobs:
         if: env.UPLOAD_ARTIFACT == 'true'
         with:
           prerelease: true
-          tag_name: ${{ env.TAG_NAME }}
+          tag_name: ${{ env.TAG_NAME || 'nightly' }}
           files: |
             ./SignOutput/rustdesk-*.msi
             ./SignOutput/rustdesk-*.exe
